@@ -12,9 +12,9 @@ Este portfólio abrange uma variedade de projetos que refletem minhas habilidade
 ### 1. Desenvolvimento Web
 
 Explore projetos web que envolvem tecnologias modernas como HTML5, CSS3 e JavaScript. Desde sites estáticos elegantemente projetados até aplicativos web interativos, demonstro minha capacidade de traduzir conceitos criativos em experiências digitais.
-### 2. Design de Interfaces
+### 2. Desenvolvimento back-end
 
-O design é uma paixão minha, e você encontrará exemplos de interfaces de usuário que criei para diferentes plataformas. Cada design é cuidadosamente pensado para garantir usabilidade, acessibilidade e estética visual.
+Demonstro minha proficiência no desenvolvimento back-end por meio de projetos que envolvem a criação de APIs, gerenciamento de bancos de dados e implementação de lógica de programação. Exploro linguagens como Python, Java, C++ e outras tecnologias relacionadas.
 ### 3. Projetos Criativos
 
 Às vezes, gosto de sair da minha zona de conforto e explorar projetos criativos que misturam tecnologia e arte. Desde animações simples até experimentações interativas, esses projetos mostram minha disposição para experimentar novas abordagens.
