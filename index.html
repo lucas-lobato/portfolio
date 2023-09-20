@@ -9,6 +9,15 @@
 </head>
 <body>
     <header class="cabecalho">
+        <nav>
+            <label for="languages">Escolha o idioma:</label>
+            <select id="languages">
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="pt">Português</option>
+            </select>
+            <button id="changeLanguage">Mudar Idioma</button>
+        </nav>
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
@@ -18,8 +27,8 @@
     <main class="apresentacao">
         <img src="./assets/foto-perfil.jpg" alt="foto perfil" class="imagem__perfil">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Desenvolvedor <strong class="titulo-destaque">a procura de uma oportunidade!</strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Lucas Lobato, desenvolvedor com especialidade em Python, Java e C++.
+            <h1 id="mensagem_inicial" class="apresentacao__conteudo__titulo">Desenvolvedor <strong class="titulo-destaque">a procura de uma oportunidade!</strong></h1>
+            <p id="mensagem_inicial_paragrafo" class="apresentacao__conteudo__texto">Olá! Sou Lucas Lobato, desenvolvedor com especialidade em Python, Java e C++.
                 Também possuo conhecimentos em HTML, CSS, SQL, JavaScript, Excel, Figma e Linux.
                 Procuro uma oportunidade para demonstrar minhas habilidades, assim
                 como adquirir novos conhecimentos para ajudar minha equipe.</p>
@@ -37,5 +46,6 @@
     <footer class="rodape">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

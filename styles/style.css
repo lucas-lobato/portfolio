@@ -27,7 +27,7 @@ body {
 
 .cabecalho {
     padding: 20px;
-    display: flex;
+    display: inline;
     justify-content: center;
 }
 
@@ -255,6 +255,28 @@ body {
     padding: 20px 10px 0px 20px;
 }
 
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 150px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6e6e6e;
+}
+
 @media (max-width: 1080px) {
     .apresentacao {
         flex-direction: column-reverse;
@@ -272,4 +294,5 @@ body {
     .apresentacao__conteudo {
         width: auto;
     }
+
 }
