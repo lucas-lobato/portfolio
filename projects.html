@@ -9,6 +9,15 @@
 </head>
 <body>
     <header class="cabecalho">
+        <nav>
+            <label for="languages">Escolha o idioma:</label>
+            <select id="languages">
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="pt">Português</option>
+            </select>
+            <button id="changeLanguage">Mudar Idioma</button>
+        </nav>
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
@@ -17,9 +26,9 @@
     </header>
     <main class="apresentacao">
         <section class="apresentacao__projeto">
-            <h1 class="apresentacao__projeto__titulo">Desigualdade Estadual no Brasil</h1>
+            <h1 id="apresentacao_projeto_titulo_desigualdade_brasil" class="apresentacao__projeto__titulo">Desigualdade Estadual no Brasil</h1>
             <section class="apresentacao__projeto__conteudo">
-                <p class="apresentacao__projeto__texto">
+                <p id="apresentacao_projeto_texto_desigualdade_brasil" class="apresentacao__projeto__texto">
                     Projeto feito no Power BI, utilizando o Excel para limpar e manipular os dados. Coletando dados
                     do Inquérito Nacional sobre Insegurança Alimentar no Contexto da Pandemia da Covid-19 no Brasil,
                     pude criar planilhas que me auxiliaram na construção de um Dashboard interativo que demonstasse
@@ -29,9 +38,9 @@
             </section>
         </section>
         <section class="apresentacao__projeto">
-            <h1 class="apresentacao__projeto__titulo">Ataque do Missil</h1>
+            <h1 id="apresentacao_projeto_titulo_ataque_do_missil" class="apresentacao__projeto__titulo">Ataque do Missil</h1>
             <section class="apresentacao__projeto__conteudo">
-                <p class="apresentacao__projeto__texto">
+                <p id="apresentacao_projeto_texto_ataque_do_missil" class="apresentacao__projeto__texto">
                     Projeto feito em C++, utilizando a biblioteca OpenGl para renderizar e projetar os
                     obejtos 3D. O jogo consiste em capturar o máximo de moedas se mser atingido pelo missil.
                     Realizei este projeto para a disciplina de computação gráfica na UERJ.
@@ -40,9 +49,9 @@
             </section>
         </section>
         <section class="apresentacao__projeto">
-            <h1 class="apresentacao__projeto__titulo">Pacman</h1>
+            <h1 id="apresentacao_projeto_titulo_pacman" class="apresentacao__projeto__titulo">Pacman</h1>
             <section class="apresentacao__projeto__conteudo">
-                <p class="apresentacao__projeto__texto">
+                <p id="apresentacao_projeto_texto_pacman" class="apresentacao__projeto__texto">
                     Projeto feito em Python, utilizando a biblioteca PyGame. O projeto foi idealizado em 
                     recriar o clássico jogo do Pacman, porém utilizando uma tecnologia moderna, como orientação
                     a objetos.
@@ -51,9 +60,9 @@
             </section>
         </section>
         <section class="apresentacao__projeto">
-            <h1 class="apresentacao__projeto__titulo">FilmFlix</h1>
+            <h1 id="apresentacao_projeto_titulo_filmflix" class="apresentacao__projeto__titulo">FilmFlix</h1>
             <section class="apresentacao__projeto__conteudo">
-                <p class="apresentacao__projeto__texto">
+                <p id="apresentacao_projeto_texto_filmflix" class="apresentacao__projeto__texto">
                     Projeto feito em Java, onde o usuário pode buscar um filme de sua preferêncai para 
                     consultar o ano de lançamento, duração do filme, título completo etc. o projeto também 
                     cria um arquivo JSON com os filmes escolhidos. Utilizei a API "OMDB" para pegar as 
@@ -66,5 +75,6 @@
     <footer class="rodape">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
+    <script src="script_projects.js"></script>
 </body>
 </html>

@@ -9,6 +9,15 @@
 </head>
 <body>
     <header class="cabecalho">
+        <nav>
+            <label for="languages">Escolha o idioma:</label>
+            <select id="languages">
+                <option value="en">Inglês</option>
+                <option value="es">Espanhol</option>
+                <option value="pt">Português</option>
+            </select>
+            <button id="changeLanguage">Mudar Idioma</button>
+        </nav>
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
@@ -17,17 +26,17 @@
     </header>
     <main class="apresentacao">
         <section class="apresentacao__formacao">
-            <h1 class="apresentacao__formacao__titulo">Formação</h1>
+            <h1 id="apresentacao_formacao_titulo" class="apresentacao__formacao__titulo">Formação</h1>
             <section class="apresentacao__formacao__conteudo">
-                <p class="apresentacao__formacao__texto">
+                <p id="apresentacao_formacao_texto" class="apresentacao__formacao__texto">
                     Bacharelado em Ciência da Computação, UERJ. Comecei em 2018 e ainda estou cursando.
                 </p>
             </section>
         </section>
         <section class="apresentacao__cursos">
-            <h1 class="apresentacao__cursos__titulo">Cursos</h1>
+            <h1 id="apresentacao_cursos_titulo" class="apresentacao__cursos__titulo">Cursos</h1>
             <section class="apresentacao__cursos__conteudo">
-                <p class="apresentacao__cursos__texto">
+                <p id="apresentacao_cursos_texto" class="apresentacao__cursos__texto">
                     Possuo certificações nas áreas de Ciência de Dados,
                     com foco em análise de dados e manipulação de bancos SQL, e Desenvolvimento de Software,
                     com foco em Back-End. Assim como formações profissionalizantes pela instituição Alura, nas áreas de Java e Orientação
@@ -36,9 +45,9 @@
             </section>
         </section>
         <section class="apresentacao__idiomas">
-            <h1 class="apresentacao__idiomas__titulo">Idiomas</h1>
+            <h1 id="apresentacao_idiomas_titulo" class="apresentacao__idiomas__titulo">Idiomas</h1>
             <section class="apresentacao__idiomas__conteudo">
-                <p class="apresentacao__idiomas__texto">
+                <p id="apresentacao_idiomas_texto" class="apresentacao__idiomas__texto">
                     Me formei em Inglês pela Cultura inglesa, adquirindo nível avançado na língua. Consigo realizar conversações e 
                     escrever textos sem dificuldades.  
                 </p>
@@ -48,5 +57,6 @@
     <footer class="rodape">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
+    <script src="script_about.js"></script>
 </body>
 </html>
