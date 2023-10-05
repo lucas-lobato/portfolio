@@ -9,13 +9,14 @@
 </head>
 <body>
     <nav class="idiomas">
-        <label for="languages">Escolha o idioma:</label>
-        <select id="languages">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="pt">Português</option>
-        </select>
-        <button id="changeLanguage">Mudar Idioma</button>
+        <div class="language-selector">
+            <select id="languages" class="select-language">
+                <option value="pt"><img src="assets/flags/pt-br.png" alt="Português">Português</option>
+                <option value="en"><img src="assets/flags/en.png" alt="English">English</option>
+                <option value="es"><img src="assets/flags/es.png" alt="Español">Español</option>
+                <option value="ch"><img src="./assets/flags/ch.png" alt="官话"> 官话</option>
+            </select>
+        </div>
     </nav>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
@@ -27,7 +28,7 @@
     <main class="apresentacao">
         <img src="./assets/foto-perfil.jpg" alt="foto perfil" class="imagem__perfil">
         <section class="apresentacao__conteudo">
-            <h1 id="mensagem_inicial" class="apresentacao__conteudo__titulo">Desenvolvedor <strong class="titulo-destaque">a procura de uma oportunidade!</strong></h1>
+            <h1 id="mensagem_inicial" class="apresentacao__conteudo__titulo">Desenvolvedor a procura de uma oportunidade!</h1>
             <p id="mensagem_inicial_paragrafo" class="apresentacao__conteudo__texto">Olá! Sou Lucas Lobato, desenvolvedor com especialidade em Python, Java e C++.
                 Também possuo conhecimentos em HTML, CSS, SQL, JavaScript, Excel, Figma e Linux.
                 Procuro uma oportunidade para demonstrar minhas habilidades, assim

@@ -18,7 +18,7 @@
 
 body {
     box-sizing: border-box;
-    background-image: url("../assets/background.jpg");
+    background-image: url("../assets/background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -35,6 +35,33 @@ body {
     display: flex;
     justify-content: center;
 }
+
+/* Adicione esta classe para estilizar o seletor de idioma personalizado */
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilize o seletor de idioma */
+.select-language {
+    padding: 5px;
+}
+
+/* Estilize o botão de idioma para que pareça uma bandeira */
+.language-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/* Adicione estilos às bandeiras dos idiomas conforme necessário */
+.language-button img {
+    width: 30px; /* Ajuste o tamanho da bandeira conforme necessário */
+    height: auto;
+}
+
 
 .apresentacao__projeto__conteudo {
     display: flex;
