@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
 :root {
     --cor-texto: #ffffff;
     --cor-fundo-claro: rgb(32, 32, 32);
@@ -22,18 +24,18 @@ body {
     font-family: var(--fonte);
 }
 
-.cabecalho {
+header {
+    background-color: var(--cor-fundo-claro);
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
-.idiomas {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.language-selector {
+.navbar__language-selector {
     display: flex;
     align-items: center;
 }
@@ -42,109 +44,113 @@ body {
     padding: 5px;
 }
 
-.cabecalho__menu {
+.navbar__menu {
     display: flex;
-    justify-content: center;
+    list-style: none;
     gap: 30px;
-    border: 2px solid var(--cor-texto-marcado);
-    width: 40rem;
-    text-align: center;
-    border-radius: 10rem;
+}
+
+.navbar__menu a {
     font-size: 1.5rem;
-    padding: 1rem;
-    text-decoration: none;
-    color: var(--cor-texto);
-}
-
-.cabecalho__menu__link {
-    text-decoration: none;
     color: var(--cor-titulos);
+    text-decoration: none;
 }
 
-.cabecalho__menu__link:hover {
-    color: var(--cor-titulos-selecionado);
-}
-
-.apresentacao {
+.main-content {
     padding: 2% 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-.apresentacao__projetos {
-    padding: 2% 5%;
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel__track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel__track {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; 
+    transition: transform 0.5s ease-in;
 }
 
-.apresentacao__projeto {
-    flex: 0 0 auto;
-    width: 30%;
-    margin: 20px;
-    padding: 10px;
+.carousel__slide {
+    min-width: 100%; /* Ajuste para 100% do tamanho do contêiner */
+    box-sizing: border-box;
+}
+
+.project {
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.apresentacao__conteudo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-}
-
-.apresentacao__conteudo__titulo {
+.project__title {
     font-size: 2.5rem;
     color: var(--cor-titulos);
-}
-
-.apresentacao__projeto__titulo {
-    font-size: 2.5rem;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.apresentacao__projeto__conteudo {
-    margin-top: 10px;
-}
-
-.apresentacao__conteudo__texto {
-    font-size: 1.5rem;
+.project__content {
     text-align: left;
 }
 
-.rodape {
+.project__text {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.project__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: var(--cor-texto);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel__button--left {
+    left: 10px;
+}
+
+.carousel__button--right {
+    right: 10px;
+}
+
+.footer {
     padding: 16px;
     font-size: 1.25rem;
     text-align: center;
     color: var(--cor-texto);
 }
 
-.imagem__projeto {
-    width: 100%;
-    height: auto;
-}
-
 @media (max-width: 1080px) {
-    .apresentacao {
-        flex-direction: column;
+    .main-content {
         padding: 5%;
     }
 
-    .cabecalho {
-        padding: 6%;
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .cabecalho__menu {
-        justify-content: center;
-    }
-
-    .apresentacao__conteudo {
-        width: auto;
+    .carousel__slide {
+        min-width: 100%; /* Ajuste para dispositivos móveis */
     }
 }

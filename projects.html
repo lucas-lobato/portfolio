@@ -2,89 +2,107 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Projetos</title>
     <link rel="stylesheet" href="./styles/projects.css">
 </head>
 <body>
-    <nav class="idiomas">
-        <div class="language-selector">
-            <select id="languages" class="select-language">
-                <option value="pt"><img src="./assets/flags/pt-br.png" alt="Português"> Português</option>
-                <option value="en"><img src="./assets/flags/en.png" alt="English"> English</option>
-                <option value="es"><img src="./assets/flags/es.png" alt="Español"> Español</option>
-                <option value="ch"><img src="./assets/flags/ch.png" alt="官话"> 官话</option>
-            </select>
-        </div>
-    </nav>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
-            <a class="cabecalho__menu__link" href="courses.html">Cursos</a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__language-selector">
+                <select id="languages" class="select-language">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ch">官话</option>
+                </select>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre mim</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="apresentacao__projetos">
-        <section class="apresentacao__projeto">
-            <h1 id="apresentacao_projeto_titulo_bi_comercial" class="apresentacao__projeto__titulo">BI Comercial</h1>
-            <section class="apresentacao__projeto__conteudo">
-                <p id="apresentacao_projeto_texto_bi_comercial" class="apresentacao__projeto__texto">
-                    Projeto desenvolvido no Power BI para analisar todo o setor comercial da empresa. O BI Comercial fornece visões detalhadas que
-                    auxiliam no monitoramento mensal e diário do faturamento, permitindo uma gestão mais eficiente e estratégica das operações comerciais.
-                </p>
-                <img src="./assets/bi-comercial.jpg" alt="foto projeto" class="imagem__projeto">
-            </section>
-        </section>
-        <section class="apresentacao__projeto">
-            <h1 id="apresentacao_projeto_titulo_desigualdade_brasil" class="apresentacao__projeto__titulo">Desigualdade Estadual no Brasil</h1>
-            <section class="apresentacao__projeto__conteudo">
-                <p id="apresentacao_projeto_texto_desigualdade_brasil" class="apresentacao__projeto__texto">
-                    Projeto feito no Power BI, utilizando o Excel para limpar e manipular os dados. Coletando dados
-                    do Inquérito Nacional sobre Insegurança Alimentar no Contexto da Pandemia da Covid-19 no Brasil,
-                    pude criar planilhas que me auxiliaram na construção de um Dashboard interativo que demonstasse
-                    visualmente a desigualdade socioeconômica no Brasil.
-                </p>
-                <img src="./assets/dashboard.png" alt="foto projeto" class="imagem__projeto">
-            </section>
-        </section>
-        <section class="apresentacao__projeto">
-            <h1 id="apresentacao_projeto_titulo_ataque_do_missil" class="apresentacao__projeto__titulo">Ataque do Missil</h1>
-            <section class="apresentacao__projeto__conteudo">
-                <p id="apresentacao_projeto_texto_ataque_do_missil" class="apresentacao__projeto__texto">
-                    Projeto feito em C++, utilizando a biblioteca OpenGl para renderizar e projetar os
-                    obejtos 3D. O jogo consiste em capturar o máximo de moedas se mser atingido pelo missil.
-                    Realizei este projeto para a disciplina de computação gráfica na UERJ.
-                </p>
-                <img src="./assets/ataque-do-missil.png" alt="foto projeto" class="imagem__projeto">
-            </section>
-        </section>
-        <section class="apresentacao__projeto">
-            <h1 id="apresentacao_projeto_titulo_pacman" class="apresentacao__projeto__titulo">Pacman</h1>
-            <section class="apresentacao__projeto__conteudo">
-                <p id="apresentacao_projeto_texto_pacman" class="apresentacao__projeto__texto">
-                    Projeto feito em Python, utilizando a biblioteca PyGame. O projeto foi idealizado em 
-                    recriar o clássico jogo do Pacman, porém utilizando uma tecnologia moderna, como orientação
-                    a objetos.
-                </p>
-                <img src="./assets/pacman.png" alt="foto projeto" class="imagem__projeto">
-            </section>
-        </section>
-        <section class="apresentacao__projeto">
-            <h1 id="apresentacao_projeto_titulo_filmflix" class="apresentacao__projeto__titulo">FilmFlix</h1>
-            <section class="apresentacao__projeto__conteudo">
-                <p id="apresentacao_projeto_texto_filmflix" class="apresentacao__projeto__texto">
-                    Projeto feito em Java, onde o usuário pode buscar um filme de sua preferêncai para 
-                    consultar o ano de lançamento, duração do filme, título completo etc. o projeto também 
-                    cria um arquivo JSON com os filmes escolhidos. Utilizei a API "OMDB" para pegar as 
-                    informações e tratei com o GSON.
-                </p>
-                <img src="./assets/filmflix.png" alt="foto projeto" class="imagem__projeto">
-            </section>
-        </section>
+    <main class="main-content">
+        <div class="carousel">
+            <button class="carousel__button carousel__button--left">&lt;</button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide">
+                        <section class="project">
+                            <h1 id="project_title_bi_comercial" class="project__title">BI Comercial</h1>
+                            <div class="project__content">
+                                <p id="project_text_bi_comercial" class="project__text">
+                                    Projeto desenvolvido no Power BI para analisar todo o setor comercial da empresa. O BI Comercial fornece visões detalhadas que
+                                    auxiliam no monitoramento mensal e diário do faturamento, permitindo uma gestão mais eficiente e estratégica das operações comerciais.
+                                </p>
+                                <img src="./assets/bi-comercial.jpg" alt="foto projeto" class="project__image">
+                            </div>
+                        </section>
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="project">
+                            <h1 id="project_title_desigualdade_brasil" class="project__title">Desigualdade Estadual no Brasil</h1>
+                            <div class="project__content">
+                                <p id="project_text_desigualdade_brasil" class="project__text">
+                                    Projeto feito no Power BI, utilizando o Excel para limpar e manipular os dados. Coletando dados
+                                    do Inquérito Nacional sobre Insegurança Alimentar no Contexto da Pandemia da Covid-19 no Brasil,
+                                    pude criar planilhas que me auxiliaram na construção de um Dashboard interativo que demonstrasse
+                                    visualmente a desigualdade socioeconômica no Brasil.
+                                </p>
+                                <img src="./assets/dashboard.png" alt="foto projeto" class="project__image">
+                            </div>
+                        </section>
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="project">
+                            <h1 id="project_title_ataque_do_missil" class="project__title">Ataque do Missil</h1>
+                            <div class="project__content">
+                                <p id="project_text_ataque_do_missil" class="project__text">
+                                    Projeto feito em C++, utilizando a biblioteca OpenGl para renderizar e projetar os
+                                    objetos 3D. O jogo consiste em capturar o máximo de moedas sem ser atingido pelo missil.
+                                    Realizei este projeto para a disciplina de computação gráfica na UERJ.
+                                </p>
+                                <img src="./assets/ataque-do-missil.png" alt="foto projeto" class="project__image">
+                            </div>
+                        </section>
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="project">
+                            <h1 id="project_title_pacman" class="project__title">Pacman</h1>
+                            <div class="project__content">
+                                <p id="project_text_pacman" class="project__text">
+                                    Projeto feito em Python, utilizando a biblioteca PyGame. O projeto foi idealizado em 
+                                    recriar o clássico jogo do Pacman, porém utilizando uma tecnologia moderna, como orientação
+                                    a objetos.
+                                </p>
+                                <img src="./assets/pacman.png" alt="foto projeto" class="project__image">
+                            </div>
+                        </section>
+                    </li>
+                    <li class="carousel__slide">
+                        <section class="project">
+                            <h1 id="project_title_filmflix" class="project__title">FilmFlix</h1>
+                            <div class="project__content">
+                                <p id="project_text_filmflix" class="project__text">
+                                    Projeto feito em Java, onde o usuário pode buscar um filme de sua preferência para 
+                                    consultar o ano de lançamento, duração do filme, título completo etc. O projeto também 
+                                    cria um arquivo JSON com os filmes escolhidos. Utilizei a API "OMDB" para pegar as 
+                                    informações e tratei com o GSON.
+                                </p>
+                                <img src="./assets/filmflix.png" alt="foto projeto" class="project__image">
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel__button carousel__button--right">&gt;</button>
+        </div>
     </main>
-    <footer class="rodape">
+    <footer class="footer">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
     <script src="script_projects.js"></script>

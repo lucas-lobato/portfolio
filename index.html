@@ -8,44 +8,47 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <nav class="idiomas">
-        <div class="language-selector">
-            <select id="languages" class="select-language">
-                <option value="pt"><img src="assets/flags/pt-br.png" alt="Português">Português</option>
-                <option value="en"><img src="assets/flags/en.png" alt="English">English</option>
-                <option value="es"><img src="assets/flags/es.png" alt="Español">Español</option>
-                <option value="ch"><img src="./assets/flags/ch.png" alt="官话"> 官话</option>
-            </select>
-        </div>
-    </nav>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
-            <a class="cabecalho__menu__link" href="courses.html">Cursos</a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__language-selector">
+                <select id="languages" class="select-language">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ch">官话</option>
+                </select>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre mim</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+            </ul>
         </nav>
     </header>
-    <main class="apresentacao">
-        <img src="./assets/foto-perfil.jpeg" alt="foto perfil" class="imagem__perfil">
-        <section class="apresentacao__conteudo">
-            <h1 id="mensagem_inicial" class="apresentacao__conteudo__titulo">Analista de Business Intelligence, transformando dados em decisões estratégicas!</h1>
-            <p id="mensagem_inicial_paragrafo" class="apresentacao__conteudo__texto">Olá! Sou Lucas Lobato, desenvolvedor com especialidade em Python,
-                Java e C++, e atualmente trabalho com Business Intelligence (BI). Também possuo conhecimentos em HTML, CSS, SQL, JavaScript, Excel,
-                Figma e Linux. Estou em busca de oportunidades para demonstrar minhas habilidades e adquirir novos conhecimentos que possam contribuir
-                para o desenvolvimento da minha equipe e meu crescimento profissional.</p>
-            <div class="apresentacao__links">
-                <h2 id="convite_redes_sociais" class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/lucas-lobato-a81071188/">
-                    <img class="apresentacao__links__link__images" src="./assets/LinkedIn_icon.svg">
-                    LinkedIn</a>
-                <a class="apresentacao__links__navegacao" href="https://github.com/lucas-lobato">
-                    <img class="apresentacao__links__link__images" src="./assets/github-mark-white.png">
-                    Github</a>
+    <main class="main-content">
+        <section class="profile">
+            <img src="./assets/foto-perfil.jpeg" alt="foto perfil" class="profile__image">
+            <div class="profile__info">
+                <h1 id="mensagem_inicial" class="profile__title">Analista de Business Intelligence, transformando dados em decisões estratégicas!</h1>
+            </div>
+        </section>
+        <section class="details">
+            <p id="mensagem_inicial_paragrafo" class="details__description">Olá! Sou Lucas Lobato, desenvolvedor com especialidade em Python, Java e C++, e atualmente trabalho com Business Intelligence (BI). Também possuo conhecimentos em HTML, CSS, SQL, JavaScript, Excel, Figma e Linux. Estou em busca de oportunidades para demonstrar minhas habilidades e adquirir novos conhecimentos que possam contribuir para o desenvolvimento da minha equipe e meu crescimento profissional.</p>
+            <div class="details__links">
+                <h2 id="convite_redes_sociais" class="details__links-title">Acesse minhas redes:</h2>
+                <a class="details__link" href="https://www.linkedin.com/in/lucas-lobato-a81071188/">
+                    <img src="./assets/LinkedIn_icon.svg" alt="LinkedIn" class="details__link-icon">
+                    LinkedIn
+                </a>
+                <a class="details__link" href="https://github.com/lucas-lobato">
+                    <img src="./assets/github-mark-white.png" alt="Github" class="details__link-icon">
+                    Github
+                </a>
             </div>
         </section>
     </main>
-    <footer class="rodape">
+    <footer class="footer">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
     <script src="script_index.js"></script>

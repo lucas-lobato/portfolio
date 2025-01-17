@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Cursos</title>
     <link rel="stylesheet" href="./styles/courses.css">
 </head>
 <body>
-    <nav class="idiomas">
-        <div class="language-selector">
-            <select id="languages" class="select-language">
-                <option value="pt"><img src="./assets/flags/pt-br.png" alt="Português"> Português</option>
-                <option value="en"><img src="./assets/flags/en.png" alt="English"> English</option>
-                <option value="es"><img src="./assets/flags/es.png" alt="Español"> Español</option>
-                <option value="ch"><img src="./assets/flags/ch.png" alt="官话"> 官话</option>
-            </select>
-        </div>
-    </nav>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
-            <a class="cabecalho__menu__link" href="courses.html">Cursos</a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__language-selector">
+                <select id="languages" class="select-language">
+                    <option value="pt">Português</option>
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ch">官话</option>
+                </select>
+            </div>
+            <ul class="navbar__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre mim</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+            </ul>
         </nav>
     </header>
     <main class="apresentacao__cursos__alura">
@@ -76,7 +76,7 @@
             </section>
         </section>
     </main>
-    <footer class="rodape">
+    <footer class="footer">
         <p>Desenvolvido por Lucas Lobato</p>
     </footer>
     <script src="script_courses.js"></script>
